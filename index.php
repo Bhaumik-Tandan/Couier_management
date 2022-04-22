@@ -3,8 +3,8 @@ include "./utils/db.php";
 if(isset($_POST['login'])) {
     $loginID= $_POST['loginID'];
     $password = $_POST['password'];
-    $sql = "SELECT * FROM users WHERE loginID = '$loginID' AND password = '$password'";
-    $conn=
+    $sql = "SELECT * FROM user WHERE lid = '$loginID' AND pass = '$password'";
+    $conn=db();
     $result = $conn->query($sql);
 
 
