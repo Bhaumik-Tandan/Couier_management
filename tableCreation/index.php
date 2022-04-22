@@ -14,14 +14,14 @@ include "../utils/executeQuery.php";
 <?php
       
         if(isset($_POST['createTable'])) {
-            executeQuery($customer);
             executeQuery($login);
-            executeQuery($admin);
+            executeQuery($offices);
             executeQuery($comments);
+            executeQuery($customer);
+            executeQuery($shipments);
+            executeQuery($admin);
             executeQuery($couriers);
             executeQuery($manage);
-            executeQuery($offices);
-            executeQuery($shipments);
             executeQuery($tracks);
             echo "Tables created successfully";
         }
