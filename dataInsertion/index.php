@@ -29,7 +29,7 @@ if(isset($_POST['insertData'])) {
     insertRecords($couriers);
     insertRecords($manage);
     insertRecords($tracks);
-    echo "Tables created successfully";
+    echo "Data inserted successfully";
 }
 ?>
 
